@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="https://www.linkedin.com/in/sanchez-1/">My LinkedIn</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="https//www.weatherrunner.com">WeatherApp</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="blog.html">Blog</a>
+                </div>                
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div>ALEJANDRO SANCHEZ</div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/FullStackPic.jpg);"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png" alt="quip">
+                        </div>
+
+                        <div class="subtitle">
+                            Full Stack Web/Software Developer
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/WeatherRunner.png);"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                                <img src="images/logos/shop-hacker.png" alt="quip">
+                        </div>
+
+                        <div class="subtitle">
+                                Weather Runner, a platform for picking the right clothing attire for the weather conditions outside.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/portfolio5.jpg);"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/edutechional.png" alt="quip">
+                        </div>
+
+                        <div class="subtitle">
+                            Javascript | React | Express | Node | AWS | HTML5 | CSS3 | C# | PostgresSQL
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/portfolio9.jpg);"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/crondose.png" alt="quip">
+                        </div>
+
+                        <div class="subtitle">
+                            Follow my blog here, to read more about my developer career and the steps I have taken to be where I'm at today!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/Dallas.jpg);"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/dailysmarty.png" alt="quip">
+                        </div>
+
+                        <div class="subtitle">
+                            B.S. Nutrition & Dietetics | South Dakota State
+                            B.S. Education in Human Sciences | South Dakota State
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/TrackPhoto.jpg);"></div>
+                
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/dashtrack.png" alt="quip">
+                        </div>
+
+                        <div class="subtitle">
+                           Running has always been a major part of my life. From just trying to make varsity in high school, to being All-American, to my Olympic Journey. Follow here!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
