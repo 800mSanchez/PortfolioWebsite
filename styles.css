@@ -167,6 +167,14 @@ body {
         margin: 0;
     }
 
+    .img-text-wrapper {
+        padding-right: 10px;
+    }
+
+    .logo-wrapper img {
+        width: 0%;
+    }
+
     .portfolio-items-wrapper {
         grid-template-columns: 1fr 1fr;
     }
