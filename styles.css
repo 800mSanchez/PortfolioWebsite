@@ -129,3 +129,49 @@ body {
 .profile-content-wrapper h1 {
     color: lightseagreen;
 }
+
+/* MEDIA QUERIES */
+
+@media(max-width: 857px){
+    .portfolio-items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .portfolio-item-wrapper {
+        position: relative;
+    }
+    
+    .portfolio-img-background {
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width: 376px){
+    .nav-wrapper > .left-side > div {
+        font-size: 0.7em;
+    }
+
+    .nav-wrapper > .right-side > div {
+        font-size: 0.7em;
+    }
+
+    .nav-wrapper {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 40px;
+        margin: 0;
+    }
+
+    .portfolio-items-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .portfolio-img-background {
+        height: 300px;
+    }
+}
